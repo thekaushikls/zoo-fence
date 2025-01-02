@@ -13,8 +13,3 @@ class User(BaseModel):
     def from_mongo(cls, data: dict):
         data = utils.map_mongo_id(data)
         return cls(**data)
-
-class UserSignIn(BaseModel):
-    email: Optional[str] = None
-    username: Optional[str] = None
-    password: str
