@@ -1,0 +1,443 @@
+[
+    {
+      "email": "g.galilei@example.com",
+      "username": "galileo",
+      "first_name": "Galileo",
+      "last_name": "Galilei",
+      "password": "te7e5cop3"
+    },
+    {
+      "email": "i.newton@example.com",
+      "username": "isaac",
+      "first_name": "Isaac",
+      "last_name": "Newton",
+      "password": "Gravity1687!"
+    },
+    {
+      "email": "a.einstein@example.com",
+      "username": "albert",
+      "first_name": "Albert",
+      "last_name": "Einstein",
+      "password": "E=mc2#1905"
+    },
+    {
+      "email": "m.curie@example.com",
+      "username": "marie",
+      "first_name": "Marie",
+      "last_name": "Curie",
+      "password": "Radium226#"
+    },
+    {
+      "email": "c.darwin@example.com",
+      "username": "charles",
+      "first_name": "Charles",
+      "last_name": "Darwin",
+      "password": "Evolution1859!"
+    },
+    {
+      "email": "n.tesla@example.com",
+      "username": "nikola",
+      "first_name": "Nikola",
+      "last_name": "Tesla",
+      "password": "AC_Current888"
+    },
+    {
+      "email": "s.hawking@example.com",
+      "username": "stephen",
+      "first_name": "Stephen",
+      "last_name": "Hawking",
+      "password": "BlackHole#42"
+    },
+    {
+      "email": "l.pasteur@example.com",
+      "username": "louis",
+      "first_name": "Louis",
+      "last_name": "Pasteur",
+      "password": "Vaccine1885$"
+    },
+    {
+      "email": "a.turing@example.com",
+      "username": "alan",
+      "first_name": "Alan",
+      "last_name": "Turing",
+      "password": "Enigma1936!"
+    },
+    {
+      "email": "r.feynman@example.com",
+      "username": "richard",
+      "first_name": "Richard",
+      "last_name": "Feynman",
+      "password": "QED_Physics#"
+    },
+    {
+      "email": "c.gauss@example.com",
+      "username": "carl",
+      "first_name": "Carl",
+      "last_name": "Gauss",
+      "password": "Normal1777$"
+    },
+    {
+      "email": "l.euler@example.com",
+      "username": "leonhard",
+      "first_name": "Leonhard",
+      "last_name": "Euler",
+      "password": "e271828#Pi"
+    },
+    {
+      "email": "g.mendel@example.com",
+      "username": "gregor",
+      "first_name": "Gregor",
+      "last_name": "Mendel",
+      "password": "Genetics866!"
+    },
+    {
+      "email": "e.schrodinger@example.com",
+      "username": "erwin",
+      "first_name": "Erwin",
+      "last_name": "Schrodinger",
+      "password": "Cat1935#Box"
+    },
+    {
+      "email": "w.heisenberg@example.com",
+      "username": "werner",
+      "first_name": "Werner",
+      "last_name": "Heisenberg",
+      "password": "Uncertain927$"
+    },
+    {
+      "email": "p.dirac@example.com",
+      "username": "paul",
+      "first_name": "Paul",
+      "last_name": "Dirac",
+      "password": "Quantum1928!"
+    },
+    {
+      "email": "m.planck@example.com",
+      "username": "max",
+      "first_name": "Max",
+      "last_name": "Planck",
+      "password": "Constant1900#"
+    },
+    {
+      "email": "n.bohr@example.com",
+      "username": "niels",
+      "first_name": "Niels",
+      "last_name": "Bohr",
+      "password": "AtomModel913$"
+    },
+    {
+      "email": "j.maxwell@example.com",
+      "username": "james",
+      "first_name": "James",
+      "last_name": "Maxwell",
+      "password": "EMField1864!"
+    },
+    {
+      "email": "l.boltzmann@example.com",
+      "username": "ludwig",
+      "first_name": "Ludwig",
+      "last_name": "Boltzmann",
+      "password": "Entropy1877#"
+    },
+    {
+      "email": "m.faraday@example.com",
+      "username": "michael",
+      "first_name": "Michael",
+      "last_name": "Faraday",
+      "password": "Induction831$"
+    },
+    {
+      "email": "b.pascal@example.com",
+      "username": "blaise",
+      "first_name": "Blaise",
+      "last_name": "Pascal",
+      "password": "Pressure1648!"
+    },
+    {
+      "email": "p.fermat@example.com",
+      "username": "pierre",
+      "first_name": "Pierre",
+      "last_name": "Fermat",
+      "password": "LastTheorem#"
+    },
+    {
+      "email": "j.fourier@example.com",
+      "username": "joseph",
+      "first_name": "Joseph",
+      "last_name": "Fourier",
+      "password": "Transform1822$"
+    },
+    {
+      "email": "d.bernoulli@example.com",
+      "username": "daniel",
+      "first_name": "Daniel",
+      "last_name": "Bernoulli",
+      "password": "Fluid1738!"
+    },
+    {
+      "email": "a.ampere@example.com",
+      "username": "andre",
+      "first_name": "Andre",
+      "last_name": "Ampere",
+      "password": "Current1820#"
+    },
+    {
+      "email": "r.boyle@example.com",
+      "username": "robert",
+      "first_name": "Robert",
+      "last_name": "Boyle",
+      "password": "GasLaw1662$"
+    },
+    {
+      "email": "j.kepler@example.com",
+      "username": "johannes",
+      "first_name": "Johannes",
+      "last_name": "Kepler",
+      "password": "Orbits1609#"
+    },
+    {
+      "email": "g.leibniz@example.com",
+      "username": "gottfried",
+      "first_name": "Gottfried",
+      "last_name": "Leibniz",
+      "password": "Calculus1684!"
+    },
+    {
+      "email": "a.lavoisier@example.com",
+      "username": "antoine",
+      "first_name": "Antoine",
+      "last_name": "Lavoisier",
+      "password": "Chemistry1789$"
+    },
+    {
+      "email": "r.millikan@example.com",
+      "username": "robert_m",
+      "first_name": "Robert",
+      "last_name": "Millikan",
+      "password": "OilDrop1909#"
+    },
+    {
+      "email": "e.rutherford@example.com",
+      "username": "ernest",
+      "first_name": "Ernest",
+      "last_name": "Rutherford",
+      "password": "Nuclear1911!"
+    },
+    {
+      "email": "l.pauling@example.com",
+      "username": "linus",
+      "first_name": "Linus",
+      "last_name": "Pauling",
+      "password": "Bond1954$"
+    },
+    {
+      "email": "w.pauli@example.com",
+      "username": "wolfgang",
+      "first_name": "Wolfgang",
+      "last_name": "Pauli",
+      "password": "Exclusion1925#"
+    },
+    {
+      "email": "e.hubble@example.com",
+      "username": "edwin",
+      "first_name": "Edwin",
+      "last_name": "Hubble",
+      "password": "Expansion1929!"
+    },
+    {
+      "email": "m.born@example.com",
+      "username": "max_b",
+      "first_name": "Max",
+      "last_name": "Born",
+      "password": "Probability1926$"
+    },
+    {
+      "email": "e.fermi@example.com",
+      "username": "enrico",
+      "first_name": "Enrico",
+      "last_name": "Fermi",
+      "password": "Reactor1942#"
+    },
+    {
+      "email": "w.bragg@example.com",
+      "username": "william",
+      "first_name": "William",
+      "last_name": "Bragg",
+      "password": "Crystal1915!"
+    },
+    {
+      "email": "c.coulomb@example.com",
+      "username": "charles",
+      "first_name": "Charles",
+      "last_name": "Coulomb",
+      "password": "Force1785$"
+    },
+    {
+      "email": "j.thomson@example.com",
+      "username": "jj",
+      "first_name": "J.J.",
+      "last_name": "Thomson",
+      "password": "Electron1897#"
+    },
+    {
+      "email": "h.hertz@example.com",
+      "username": "heinrich",
+      "first_name": "Heinrich",
+      "last_name": "Hertz",
+      "password": "Radio1887!"
+    },
+    {
+      "email": "g.ohm@example.com",
+      "username": "georg",
+      "first_name": "Georg",
+      "last_name": "Ohm",
+      "password": "Resistance1827$"
+    },
+    {
+      "email": "h.becquerel@example.com",
+      "username": "henri",
+      "first_name": "Henri",
+      "last_name": "Becquerel",
+      "password": "Radiation1896#"
+    },
+    {
+      "email": "l.debroglie@example.com",
+      "username": "louis_d",
+      "first_name": "Louis",
+      "last_name": "de Broglie",
+      "password": "WaveMatter1924!"
+    },
+    {
+      "email": "m.mayer@example.com",
+      "username": "maria",
+      "first_name": "Maria",
+      "last_name": "Mayer",
+      "password": "Shell1963$"
+    },
+    {
+      "email": "l.meitner@example.com",
+      "username": "lise",
+      "first_name": "Lise",
+      "last_name": "Meitner",
+      "password": "Fission1939#"
+    },
+    {
+      "email": "e.noether@example.com",
+      "username": "emmy",
+      "first_name": "Emmy",
+      "last_name": "Noether",
+      "password": "Symmetry1915!"
+    },
+    {
+      "email": "d.mendeleev@example.com",
+      "username": "dmitri",
+      "first_name": "Dmitri",
+      "last_name": "Mendeleev",
+      "password": "Table1869$"
+    },
+    {
+      "email": "g.stokes@example.com",
+      "username": "george",
+      "first_name": "George",
+      "last_name": "Stokes",
+      "password": "Fluid1851#"
+    },
+    {
+      "email": "j.gibbs@example.com",
+      "username": "josiah",
+      "first_name": "Josiah",
+      "last_name": "Gibbs",
+      "password": "Phase1876!"
+    },
+    {
+      "email": "s.carnot@example.com",
+      "username": "sadi",
+      "first_name": "Sadi",
+      "last_name": "Carnot",
+      "password": "Cycle1824$"
+    },
+    {
+      "email": "h.cavendish@example.com",
+      "username": "henry",
+      "first_name": "Henry",
+      "last_name": "Cavendish",
+      "password": "Hydrogen1766#"
+    },
+    {
+      "email": "s.poisson@example.com",
+      "username": "simeon",
+      "first_name": "Simeon",
+      "last_name": "Poisson",
+      "password": "Distribution1837!"
+    },
+    {
+      "email": "j.dalton@example.com",
+      "username": "john",
+      "first_name": "John",
+      "last_name": "Dalton",
+      "password": "Atomic1808$"
+    },
+    {
+      "email": "c.doppler@example.com",
+      "username": "christian",
+      "first_name": "Christian",
+      "last_name": "Doppler",
+      "password": "Effect1842#"
+    },
+    {
+      "email": "g.kirchhoff@example.com",
+      "username": "gustav",
+      "first_name": "Gustav",
+      "last_name": "Kirchhoff",
+      "password": "Circuit1845!"
+    },
+    {
+      "email": "j.joule@example.com",
+      "username": "james_j",
+      "first_name": "James",
+      "last_name": "Joule",
+      "password": "Energy1843$"
+    },
+    {
+      "email": "w.wien@example.com",
+      "username": "wilhelm",
+      "first_name": "Wilhelm",
+      "last_name": "Wien",
+      "password": "Displacement1893#"
+    },
+    {
+      "email": "j.van_hooft@example.com",
+      "username": "gerard",
+      "first_name": "Gerard",
+      "last_name": "van Hooft",
+      "password": "Gauge1971!"
+    },
+    {
+      "email": "p.zeeman@example.com",
+      "username": "pieter",
+      "first_name": "Pieter",
+      "last_name": "Zeeman",
+      "password": "Split1896$"
+    },
+    {
+      "email": "b.franklin@example.com",
+      "username": "benjamin",
+      "first_name": "Benjamin",
+      "last_name": "Franklin",
+      "password": "Lightning1752#"
+    },
+    {
+      "email": "a.avogadro@example.com",
+      "username": "amedeo",
+      "first_name": "Amedeo",
+      "last_name": "Avogadro",
+      "password": "Mole1811!"
+    },
+    {
+      "email": "c.shannon@example.com",
+      "username": "claude_s",
+      "first_name": "Claude",
+      "last_name": "Shannon",
+      "password": "Information1948$"
+    }
+]
