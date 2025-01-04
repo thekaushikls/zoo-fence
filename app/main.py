@@ -6,7 +6,7 @@ from dotenv import load_dotenv
 from fastapi import FastAPI, APIRouter
 from typing import Optional
 from pymongo import MongoClient
-from . import utils, models
+from app import utils, models
 
 # - - - - GLOBALS
 load_dotenv()

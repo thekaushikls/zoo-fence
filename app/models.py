@@ -1,6 +1,6 @@
 from pydantic import BaseModel, Field
 from typing import Optional
-from . import utils
+from app import utils
 
 class User(BaseModel):
     email: str
