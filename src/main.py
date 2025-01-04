@@ -63,7 +63,7 @@ def get_user(email: Optional[str] = None, username: Optional[str] = None) -> dic
         }
 
 # - - - - API ROUTES
-@routes.get("/")
+@routes.get("/api", tags=["API"])
 async def root():
     
     status = {
@@ -93,7 +93,7 @@ async def root():
     
     return status
 
-@routes.post("/api/signUp")
+@routes.post("/api/signUp", tags=["API"])
 async def sign_up(user: models.User):
     # Check if user already exists
     result = get_user(user.email, user.username)
@@ -123,7 +123,7 @@ async def sign_up(user: models.User):
             "message": result["message"]
         }
 
-@routes.get("/api/signIn")
+@routes.get("/api/signIn", tags=["API"])
 async def sign_in(password: str, email: Optional[str] = None, username: Optional[str] = None):
     if password is None or len(password) < utils.MIN_PASSWORD_LENGTH:
         return {
