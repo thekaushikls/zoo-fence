@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZooFence Login</title>
+    <link rel="icon" type="image/x-icon" href="./favicon.ico">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap">
+    <style>
+        * {
+            font-family: 'Roboto Mono', monospace;
+        }
+
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        label {
+            color: #c4c4c4;
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        .input-container
+        {
+            display: block;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        input
+        {
+            width: calc(100% - 40px);
+            padding: 15px 20px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+            margin-bottom: 10px;
+            color: #282828;
+            text-align: center;
+        }
+
+        button
+        {
+            width: 100%;
+            height: 100%;
+            padding: 15px 20px;
+            margin-top: 20px;
+            border-radius: 8px;
+            background-color: #282828;
+            color: #ffffff;
+            border: none;
+            cursor: pointer;
+            text-align: center;
+        }
+        
+        .footer-text {
+            color: #7c7c7c;
+            font-size: 12px;
+        }
+        
+        .dropdown {   
+            appearance: none;
+            text-align: center;
+            padding: 15px 10px;
+            border-radius: 8px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            color: #282828;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="input-container">
+            <input id="emailTextBox" type="email" placeholder="email"><br>
+            <input id="passwordTextBox" type="password" placeholder="password"><br>
+            <button id="loginButton" onclick="onLoginButtonClick()"> Login </button>
+        </div>
+    </div>
+
+    <script>
+        let emailTextBox = document.getElementById("emailTextBox");
+        let passwordTextBox = document.getElementById("passwordTextBox");
+        let loginButton = document.getElementById("loginButton");
+
+        passwordTextBox.addEventListener("keypress", function(args){
+            if(args.key == "Enter"){
+                loginButton.click();
+            }
+        });
+
+        function onLoginButtonClick(){
+            // Get values from input fields
+            const email = emailTextBox.value;
+            const password = passwordTextBox.value;
+
+            // Create URL with query params
+            const url = `http://localhost:8080/api/signIn?email=${encodeURIComponent(email)}&password=${encodeURIComponent(password)}`;
+
+            fetch(url, {
+                method: 'GET',
+                mode: 'cors', // Add CORS mode
+                headers: {
+                    'Accept': 'application/json',
+                }
+            })
+            .then(response => response.json())
+            .then(data => {
+                console.log('Success:', data);
+
+                if(data.status == 200){
+                    loginButton.style.backgroundColor = '#007E33';
+                    loginButton.textContent  = "Success";
+                }
+                else{
+                    loginButton.style.backgroundColor = '#CC0000';
+                    loginButton.textContent  = "Failed";    
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                loginButton.style.backgroundColor = '#CC0000';
+                loginButton.textContent  = "Error";
+            });
+        }
+    </script>
+</body>
+</html>

@@ -3,7 +3,8 @@
 # - - - - IMPORTS
 from os import getenv
 from dotenv import load_dotenv
-from fastapi import FastAPI, APIRouter
+from fastapi import FastAPI, APIRouter, Request
+from fastapi.templating import Jinja2Templates
 from typing import Optional
 from pymongo import MongoClient
 from app import utils, models
@@ -13,6 +14,8 @@ load_dotenv()
 cluster = MongoClient(getenv("DATABASE_URL"))
 db = cluster[getenv("DATABASE_NAME")]
 app = FastAPI()
+
+templates = Jinja2Templates(directory="templates")
 routes = APIRouter()
 
 # - - - - HELPERS
@@ -63,6 +66,10 @@ def get_user(email: Optional[str] = None, username: Optional[str] = None) -> dic
         }
 
 # - - - - API ROUTES
+@routes.get("/", tags=["UI"])
+async def home(request: Request):
+    return templates.TemplateResponse("signIn.html", {"request": request})
+
 @routes.get("/api", tags=["API"])
 async def root():
     
