@@ -60,6 +60,13 @@ def get_user(email: Optional[str] = None, username: Optional[str] = None) -> dic
         }
 
 # - - - - API ROUTES
+@routes.get("/")
+async def root():
+    return {
+        "status": 200,
+        "message": "If you see this message, this site is working. Yay!"
+        }
+
 @routes.post("/api/signUp")
 async def sign_up(user: models.User):
     # Check if user already exists
