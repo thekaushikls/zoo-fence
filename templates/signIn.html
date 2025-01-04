@@ -88,6 +88,7 @@
     </div>
 
     <script>
+        let baseUrl = "https://zoo-fence.onrender.com";
         let emailTextBox = document.getElementById("emailTextBox");
         let passwordTextBox = document.getElementById("passwordTextBox");
         let loginButton = document.getElementById("loginButton");
@@ -104,7 +105,9 @@
             const password = passwordTextBox.value;
 
             // Create URL with query params
-            const url = `http://localhost:8080/api/signIn?email=${encodeURIComponent(email)}&password=${encodeURIComponent(password)}`;
+            const url = `${baseUrl}/api/signIn?email=${encodeURIComponent(email)}&password=${encodeURIComponent(password)}`;
+
+            
 
             fetch(url, {
                 method: 'GET',
