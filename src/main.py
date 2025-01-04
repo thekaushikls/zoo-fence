@@ -28,6 +28,9 @@ def is_valid_password(password: str) -> bool:
     return len(password) >= 8
 
 # - - - - METHODS
+def get_user_count() -> int:
+    return db.get_collection("users").count_documents({})
+
 def get_user(email: Optional[str] = None, username: Optional[str] = None) -> dict:
 
     if is_valid_email(email) or is_valid_username(username): 
@@ -62,10 +65,33 @@ def get_user(email: Optional[str] = None, username: Optional[str] = None) -> dic
 # - - - - API ROUTES
 @routes.get("/")
 async def root():
-    return {
+    
+    status = {
+        "webapp": None,
+        "database": None
+    }
+
+    # Web Application Status
+    status["webapp"] = {
         "status": 200,
-        "message": "If you see this message, this site is working. Yay!"
+        "message": "✅ Running Successfully"
+    }
+
+    # Database Connection Status
+    try:
+        count = get_user_count()
+        status["database"] = {
+            "status": 200,
+            "message": "✅ Connection Successful"
         }
+    except Exception as ex:
+        status["database"] = {
+            "status": 500,
+            "message": "❌ Connection Failed"
+        }
+        status["error"] = str(ex)
+    
+    return status
 
 @routes.post("/api/signUp")
 async def sign_up(user: models.User):
