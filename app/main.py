@@ -14,7 +14,7 @@ from app import utils, models
 load_dotenv()
 cluster = MongoClient(getenv("DATABASE_URL"))
 db = cluster[getenv("DATABASE_NAME")]
-allowed_origins = getenv("ALLOWED_ORIGINS")
+allowed_origins = getenv("ALLOWED_ORIGINS").split(",")
 app = FastAPI()
 app.add_middleware(
     CORSMiddleware,
