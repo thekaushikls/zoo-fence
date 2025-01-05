@@ -4,6 +4,7 @@
 from os import getenv
 from dotenv import load_dotenv
 from fastapi import FastAPI, APIRouter, Request
+from fastapi.middleware.cors import CORSMiddleware
 from fastapi.templating import Jinja2Templates
 from typing import Optional
 from pymongo import MongoClient
@@ -13,8 +14,15 @@ from app import utils, models
 load_dotenv()
 cluster = MongoClient(getenv("DATABASE_URL"))
 db = cluster[getenv("DATABASE_NAME")]
+allowed_origins = getenv("ALLOWED_ORIGINS")
 app = FastAPI()
-
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=allowed_origins,
+    allow_credentials=True,
+    allow_methods=["*"],  # Allow all methods
+    allow_headers=["*"],  # Allow all headers
+)
 templates = Jinja2Templates(directory="templates")
 routes = APIRouter()
 
